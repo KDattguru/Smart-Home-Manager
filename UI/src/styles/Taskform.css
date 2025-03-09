@@ -1,0 +1,30 @@
+.date-input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .formbox{
+
+    background-color: #f3eeee2f!important;
+    text-align: center;
+    color: white !important;
+  }
+  .status-select {
+    font-weight: bold;
+  }
+  
+  .status-pending {
+    color: #e67e22 !important;
+  }
+  
+  .status-inprogress {
+    color: #3498db !important;
+  }
+  
+  .status-done {
+    color: #2ecc71 !important;
+  }
+  

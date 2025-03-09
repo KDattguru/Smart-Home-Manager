@@ -1,0 +1,43 @@
+.bill-form-card {
+    margin-top: 20px;
+    width: 100%;
+    height: 400px;
+    
+    background: linear-gradient(135deg, #1e4c75, #294344);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.bill-form-card .card-title {
+    
+    font-weight: bold;
+    color: #fff;
+}
+
+.bill-form-card .form-control {
+    border-radius: 8px;
+    
+    font-size: 10px;
+}
+
+.bill-form-card .form-label {
+    font-weight: bold;
+    color: #fff;
+}
+
+.bill-form-card button {
+    width: 100%;
+    background: linear-gradient(200deg, #2887da, #dbb1b4);
+    color: #090a0a;
+    font-weight: bold;
+    border: none;
+    box-shadow:2px 2px 4px #fff;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.bill-form-card button:hover {
+    background: #007bff;
+    color: white;
+}

@@ -1,0 +1,37 @@
+.task-list-container {
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .task-description {
+    max-width: 300px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f4f4f4;
+  }
+  
+  @media (max-width: 768px) {
+    .task-description {
+      max-width: 200px;
+    }
+  
+    th, td {
+      padding: 8px;
+    }
+  }
+  

@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&family=Zeyada&display=swap');
+
+.register-form-container {
+    max-width: 500px;
+    width:500px;
+    height: 550px;
+    margin: auto;
+    background: linear-gradient(90deg, #efd5ff 0%, #3639d675 100%);
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(9px) !important;
+  -webkit-backdrop-filter: blur(9px) !important;
+
+  }
+  body{
+    overflow-x: hidden;
+   
+  }
+  .title-box{
+    font-weight:bolder;
+    font-family: "Zeyada", cursive;
+  }
+  
+  .box{
+    height: 100vh;
+    width: 100%;
+    background-image:url("../../public/images/register.webp") ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right top;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+   
+   
+  }
+  @media (max-width: 768px) {
+    .register-form-container {
+      max-width: 90%;
+      padding: 20px;
+    }
+  }
+  
+  .register-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .register-form-container input,
+  .register-form-container select {
+    height: 35px;
+    font-size: 14px;
+  }
+  
+  .register-form-container .form-control[type="file"] {
+    padding: 8px;
+  }
+  
+  .register-form-container .btn-primary {
+    font-size: 18px;
+
+  }
+  
+  .signin-text {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .signin-text span {
+    color: #007bff;
+    cursor: pointer;
+  }
+  
+  .signin-text span:hover {
+    text-decoration: underline;
+  }
+  
+
+  .dropzone {
+  border: 2px dashed #007bff;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.dropzone:hover {
+  background-color: #e9ecef;
+}
+
+.file-name {
+  display: block;
+  margin-top: 5px;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.register-form-container {
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .dropzone {
+    width: 100px;
+    border: 2px dashed #007bff;
+    padding: 10px;
+    
+    cursor: pointer;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .dropzone:hover {
+    background-color: #e9ecef;
+  }
+  
+  .upload-icon {
+    width: 70px; 
+    height: 70px;
+    opacity: 0.7;
+    border-radius: 50%;
+  }
+  
+  .upload-icon:hover {
+    opacity: 1;
+    
+  }
+  
+  .file-name {
+    display: block;
+    margin-top: 5px;
+    font-size: 12px;
+    color: #6c757d;
+  }
+  
+  .image-box {
+    width:300px;
+    height:240px;
+    position: relative;
+    font-size: 75px;
+    top: 120px;
+    left: 70px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    font-weight:bold;
+    font-family: "Zeyada", cursive;
+    line-height: 1.1em;
+    border-radius: 10px;
+    
+    
+  }
+  
+  
+  

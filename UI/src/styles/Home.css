@@ -1,0 +1,161 @@
+
+.home-container {
+    padding: 20px;
+    background:#4470e76b;
+    border-radius: 14px;
+ /* overflow-y: scroll; 
+  scrollbar-width: none; 
+  -ms-overflow-style: none;  */
+  height:110vh;
+    
+  }
+  
+  .home-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+
+  .overview-cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .overview-card {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    background-color: #f3eeee96!important;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+  
+  
+  .overview-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  
+  .card-icon {
+    margin-bottom: 10px;
+  }
+  
+  .task-icon {
+    color: #ff6b6b;
+  }
+  
+  .inventory-icon {
+    color: #4c8bf5;
+  }
+  
+  .bills-icon {
+    color: #ffaf00;
+  }
+  
+  
+  .card-data {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+
+  .stats-card {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #f3eeee96!important;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .label {
+    font-family: "Greycliff CF", var(--mantine-font-family);
+    font-weight: 700;
+    line-height: 1;
+  }
+  
+  .lead {
+    font-family: "Greycliff CF", var(--mantine-font-family);
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1;
+    color: var(--mantine-color-dark);
+  }
+  
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .ring {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .small-overview-card {
+    margin-top: 20px;
+    width: 320px;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .small-overview-card:hover{
+transform: translateY(-5px);
+
+  }
+  .small-overview-card{
+   background-color: #f3eeee96!important;
+   text-align: center;
+  }
+
+
+
+  .user-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  @media (max-width: 768px) {
+    .overview-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .overview-card {
+      width: 90%;
+    }
+  
+    .inner {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .ring {
+      justify-content: center;
+      margin-top: var(--mantine-spacing-md);
+    }
+  }
+  

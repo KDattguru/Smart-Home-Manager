@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&family=Zeyada&display=swap');
+.title {
+  font-family: Greycliff CF, var(--mantine-font-family);
+  font-family: "Rubik Glitch Pop", system-ui;
+  font-weight: 200;
+}
+
+.Homebox{
+  position: absolute;
+  top: 20px;
+  font-family: "Zeyada", cursive;
+ font-size:100px;
+ font-weight: 800px;
+ background: linear-gradient(to right, #0b0b0c 41%, #0B1B20 29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.Homebox-two{
+  position: absolute;
+  left:350px;
+  top: 150px;
+  font-family: "Zeyada", cursive;
+ font-size:100px;
+ font-weight: 900px;
+ background: linear-gradient(to right, #0b0b0c 41%, #0B1B20 29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  
+}
+
+.Homebox-three{
+  position: absolute;
+  top: 350px;
+  left:600px;
+  font-family: "Zeyada", cursive;
+ font-size:100px;
+ font-weight: 800px;
+ background: linear-gradient(to right, #0b0b0c 41%, #0B1B20 29%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+  
+}
+
+.login-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 40px;
+  background-image:url("../../public/images/Home.webp") ;
+  backdrop-filter: blur(10px);
+  z-index: 999;
+}
+
+
+.logbox {
+ background-color:rgba(157, 151, 163, 0.541)! important;
+  width: 50% !important;
+  max-width: 330px;
+  height: 350px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+  backdrop-filter: blur(9px) !important;
+  -webkit-backdrop-filter: blur(9px) !important;
+  border-radius: 10px !important;
+  padding: 10px !important;
+  
+}
+
+
+.floating-button {
+  position: fixed;
+  top:40%;
+  left:45%;
+  width:140px;
+  height: 126px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 50%;
+  object-fit:cover;
+  
+}
+
+
+.login-icon {
+  width: 100%;
+  height: 100%;
+  object-fit:cover ;
+  
+ 
+}
+.mantine-Modal-root {
+  transition: opacity 0.3s ease-in-out;
+}
+
+
+.login-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image:url("../../public/images/Home-2.webp") ;
+  background-repeat: no-repeat;
+  background-size:fill;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 998;
+}
+
+
+
+
+.login-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
