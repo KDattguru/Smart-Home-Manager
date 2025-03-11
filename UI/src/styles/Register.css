@@ -4,6 +4,9 @@ body {
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  scrollbar-width: none;
+  -ms-overflow-style: none; 
+
 }
 
 .register-form-container {
@@ -17,6 +20,8 @@ body {
   backdrop-filter: blur(9px) !important;
   -webkit-backdrop-filter: blur(9px) !important;
   padding: 20px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .title-box {
@@ -38,12 +43,14 @@ body {
 
 }
 
-/* FORM FIELDS */
+
 .register-title {
+  margin-top:40px;
   text-align: center;
-  font-size: 24px;
+  font-size: 60px;
   font-weight: bold;
   margin-bottom: 15px;
+  font-family: "Zeyada", cursive;
 }
 
 .register-form-container input,

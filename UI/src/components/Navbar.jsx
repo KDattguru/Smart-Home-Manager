@@ -77,7 +77,7 @@ function AppNavbar({ toggleSidebar }) {
 
         {user ? (
           <>
-            <h2 className="d-none d-md-block">Welcome {user?.username || "Unknown"}</h2>
+            <h2 className="d-none d-md-block ">Welcome {user?.username || "Unknown"}</h2>
             <Dropdown align="end">
               <Dropdown.Toggle variant="dark" className="d-flex align-items-center border-0 bg-transparent">
                 <Image
