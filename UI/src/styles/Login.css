@@ -1,101 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Glitch+Pop&family=Zeyada&display=swap');
+
 .title {
-  font-family: Greycliff CF, var(--mantine-font-family);
   font-family: "Rubik Glitch Pop", system-ui;
   font-weight: 200;
 }
 
-.Homebox{
+.Homebox {
   position: absolute;
-  top: 20px;
+  top: 10px;
   font-family: "Zeyada", cursive;
- font-size:100px;
- font-weight: 800px;
- background: linear-gradient(to right, #0b0b0c 41%, #0B1B20 29%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-.Homebox-two{
-  position: absolute;
-  left:350px;
-  top: 150px;
-  font-family: "Zeyada", cursive;
- font-size:100px;
- font-weight: 900px;
- background: linear-gradient(to right, #0b0b0c 41%, #0B1B20 29%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-  
+  font-size: 80px;
+  font-weight: 800;
+  background: linear-gradient(to right, #0b0b0c 41%, #0B1B20 29%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.Homebox-three{
+.Homebox-two {
   position: absolute;
-  top: 350px;
-  left:600px;
+  left: 250px;
+  top: 120px;
   font-family: "Zeyada", cursive;
- font-size:100px;
- font-weight: 800px;
- background: linear-gradient(to right, #0b0b0c 41%, #0B1B20 29%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-  
+  font-size: 80px;
+  font-weight: 900;
+  background: linear-gradient(to right, #0b0b0c 41%, #0B1B20 29%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Homebox-three {
+  position: absolute;
+  top: 400px;
+  left: 850px;
+  font-family: "Zeyada", cursive;
+  font-size: 80px;
+  font-weight: 800;
+  background: linear-gradient(to right, #0b0b0c 41%, #0B1B20 29%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .login-container {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   width: 100%;
   position: fixed;
   top: 0;
-  left: 40px;
-  background-image:url("../../public/images/Home.webp") ;
+  left: 0;
+  background-image: url("../../public/images/Home.webp");
+  background-size: cover;
+  background-position: center;
   backdrop-filter: blur(10px);
   z-index: 999;
 }
 
-
 .logbox {
- background-color:rgba(157, 151, 163, 0.541)! important;
-  width: 50% !important;
+  background-color: rgba(246, 245, 247, 0.075) !important;
+  width: 90% !important;
   max-width: 330px;
   height: 350px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
-  backdrop-filter: blur(9px) !important;
-  -webkit-backdrop-filter: blur(9px) !important;
   border-radius: 10px !important;
   padding: 10px !important;
-  
 }
-
 
 .floating-button {
   position: fixed;
-  top:40%;
-  left:45%;
-  width:140px;
-  height: 126px;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  transform: translate(-50%, -50%);
   cursor: pointer;
   z-index: 1000;
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   border-radius: 50%;
-  object-fit:cover;
-  
+  object-fit: cover;
 }
-
-
-.login-icon {
-  width: 100%;
-  height: 100%;
-  object-fit:cover ;
-  
- 
-}
-.mantine-Modal-root {
-  transition: opacity 0.3s ease-in-out;
-}
-
 
 .login-background {
   position: fixed;
@@ -103,17 +85,14 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background-image:url("../../public/images/Home-2.webp") ;
+  background-image: url("../../public/images/Home-2.webp");
   background-repeat: no-repeat;
-  background-size:fill;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 998;
 }
-
-
-
 
 .login-icon {
   width: 100%;
@@ -121,4 +100,86 @@
   object-fit: contain;
   border-radius: 50%;
 }
+@media screen and (max-width: 768px) {
+  .Homebox, .Homebox-two, .Homebox-three {
+    position: relative;
+    font-size: 50px;
+    text-align: center;
+    left: auto;
+    top: auto;
+    display: block;
+    margin: 10px auto;
+  }
+.Homebox{
+  position: absolute;
+  left:20px;
+  top:100px;
+  font-size: 50px;
 
+}
+  .login-container {
+    
+    justify-content: center;
+    
+    overflow-y: hidden;
+  }
+
+  .floating-button {
+    width: 80px;
+    height: 80px;
+  }
+
+  .login-background {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  
+
+  .Homebox-two{
+    position: absolute;
+    top:50px;
+    font-size: 70px;
+  }
+.Homebox-three{
+  position: absolute;
+    top:150px;
+    left:50px;
+    font-size: 65px;
+    
+
+
+}
+  .logbox {
+    margin-top: 100px !important;
+    width: 100%;
+    max-width: 280px;
+    height: 350px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px !important;
+  }
+
+  .floating-button {
+    position:absolute;
+    width: 80px;
+    height: 80px;
+    top:230px;
+    left:150px;
+  }
+
+  .login-background {
+    background-size:contain;
+    background-position:center;
+    background-repeat: no-repeat;
+  }
+
+  .login-container {
+    background-size:cover;
+    justify-content: center;
+    overflow-y: hidden;
+    background-repeat: no-repeat;
+  }
+
+}

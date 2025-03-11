@@ -1,36 +1,37 @@
-Project OverView 
+      Project OverView 
 
-Dashboard Overview – Home Page Layout
+1)Dashboard Overview – Home Page Layout
 Navigation Bar (Top or Sidebar)
 
-Profile Picture + User Name
+2)Profile Picture + User Name
 Home | Tasks | Inventory | Bills | Settings
 Logout Button
 🔹 Main Dashboard Sections
 🔹 Quick Overview Cards (At the Top)
 
- Pending Tasks – Number of tasks left today
+ 3)Pending Tasks – Number of tasks left today
  Total Inventory Items – Items logged
  Upcoming Bills – Bills due soon
-Task Assignment (Left Section)
 
+
+3)Task Assignment (Left Section)
 List of assigned tasks
 Status: Pending / In Progress / Done
 "Mark as Done" button
- Home Inventory (Middle Section)
 
+ 5)Home Inventory (Middle Section)
 Searchable list of home items
 Quick view: Warranty Expiry, Maintenance Alerts
  Add Item” button
- Bills Management (Right Section)
 
+ 6)Bills Management (Right Section)
 List of bills (Paid / Pending / Overdue)
 Due date reminders
 “Pay Now” or “Mark as Paid” button
  Footer
 
 
-💡 UI Suggestions with Mantine UI
+ UI Suggestions with Mantine UI
 Use Mantine Grid for responsive layout.
 Cards & Badges for task status, bill .
 Modals & Forms for adding inventory items, tasks, or bills.

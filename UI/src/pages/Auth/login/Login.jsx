@@ -104,7 +104,7 @@ export default function Login({ setAuthTokenState }) {
               <h3 ta="center" className="Homebox-three">
               Home Manager
               </h3>
-            <Paper shadow="md" p={30} mt={30} radius="md" className="logbox">
+            <Paper  p={30} mt={30} radius="md" className="logbox">
              
 
               <form onSubmit={handleLogin}>

@@ -12,7 +12,6 @@ const TaskCards = ({ tasks, onTaskUpdated }) => {
     const handleStorageChange = () => {
       setToken(getAuthToken());
     };
-
     window.addEventListener("storage", handleStorageChange);
     return () => {
       window.removeEventListener("storage", handleStorageChange);
@@ -42,21 +41,26 @@ const TaskCards = ({ tasks, onTaskUpdated }) => {
       breakpoints={[
         { maxWidth: "lg", cols: 2 },
         { maxWidth: "md", cols: 2 },
-        { maxWidth: "sm", cols: 1 },
+        { maxWidth: "sm", cols: 1 },  // One card per row on small screens
       ]}
     >
       {tasks && tasks.length > 0 ? (
         tasks.map((task) => (
-          <Card  className="task-card"
-            key={task.id} 
-            shadow="lg" 
-            padding="lg" 
-            radius="md" 
-            border="default"
-            style={{ backgroundColor: "linear-gradient(135deg, #0d0f13, #7ea8d6)", borderLeft: `4px solid ${task.status === "Done" ? "green" : "#ffcc00"}` }}
+          <Card
+            className="task-card"
+            key={task.id}
+            shadow="lg"
+            padding="md"
+            radius="md"
+            style={{
+              backgroundColor: "linear-gradient(135deg, #0d0f13, #7ea8d6)",
+              borderLeft: `4px solid ${task.status === "Done" ? "green" : "#ffcc00"}`,
+              minHeight: "200px",
+              wordWrap: "break-word",
+            }}
           >
             <Group position="apart">
-              <Text weight={600} size="lg" >{task.title}</Text>
+              <Text weight={600} size="lg">{task.title}</Text>
               <Badge size="lg" color={task.status === "Done" ? "green" : "yellow"}>{task.status}</Badge>
             </Group>
             <Text size="sm" mt="sm" color="white">{task.description}</Text>
@@ -65,14 +69,14 @@ const TaskCards = ({ tasks, onTaskUpdated }) => {
               <Text size="sm" color="blue" weight={500}>{task.assigned_user?.username || "Unassigned"}</Text>
             </Group>
             {task.status !== "Done" && (
-              <Button mt="md" color="blue" fullWidth onClick={() => task.id && markAsDone(task.id)}>
+              <Button mt="md" color="blue" fullWidth size="xs" onClick={() => task.id && markAsDone(task.id)}>
                 Mark as Done
               </Button>
             )}
           </Card>
         ))
       ) : (
-        <Text align="center" size="lg" >No tasks available</Text>
+        <Text align="center" size="lg">No tasks available</Text>
       )}
     </SimpleGrid>
   );

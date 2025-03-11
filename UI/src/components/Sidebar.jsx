@@ -18,7 +18,7 @@ const menuItems = [
 
 export function Sidebar() {
   return (
-    <nav className="sidebar">
+    <nav className="">
       <div className="sidebar-header text-center">
         <img src={logo} alt="Logo" className="logo" />
         <h3>Home Manager</h3>

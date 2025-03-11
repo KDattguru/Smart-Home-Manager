@@ -57,14 +57,20 @@ export default function Register() {
   });
 
   return (
-    <Container className="box">
-    
-      <Row className="justify-content-start mt-5">
-      
-        <Col md={5}>
+    <>
+        <div className="box">
+    <Container className="register-container">
+      <Row className="justify-content-start align-items-center">
+        
+        <Col xs={12} className="text-center mb-3">
+          <h2 className="register-title text-start ">Register Your Account</h2>
+        </Col>
+
+        {/* Form section */}
+        <Col xs={12} md={6}>
           <Form className="register-form-container p-4 shadow rounded" onSubmit={handleSubmit}>
             <Row className="mb-3">
-              <Col md={6}>
+              <Col xs={12} md={6}>
                 <Form.Group>
                   <Form.Label>Username</Form.Label>
                   <Form.Control
@@ -77,7 +83,7 @@ export default function Register() {
                   />
                 </Form.Group>
               </Col>
-              <Col md={6}>
+              <Col xs={12} md={6}>
                 <Form.Group>
                   <Form.Label>Email</Form.Label>
                   <Form.Control
@@ -93,7 +99,7 @@ export default function Register() {
             </Row>
 
             <Row className="mb-3">
-              <Col md={6}>
+              <Col xs={12} md={6}>
                 <Form.Group>
                   <Form.Label>Role</Form.Label>
                   <Form.Select
@@ -107,7 +113,7 @@ export default function Register() {
                   </Form.Select>
                 </Form.Group>
               </Col>
-              <Col md={6}>
+              <Col xs={12} md={6}>
                 <Form.Group>
                   <Form.Label>Phone Number</Form.Label>
                   <Form.Control
@@ -159,14 +165,12 @@ export default function Register() {
             </p>
           </Form>
         </Col>
-
-        
-        <Col md={6} className="d-flex align-items-center justify-content-start">
-          <div className="image-box">
-            Register Your Account
-          </div>
-        </Col>
       </Row>
     </Container>
+    </div>
+    </>
   );
+    
+   
+
 }

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Grid, TextInput } from "@mantine/core";
+import { Grid } from "@mantine/core";
 import InvForm from "../components/inventory/InvForm";
 import InvList from "../components/inventory/InvList";
 import "../styles/Inventory.css";
@@ -8,14 +8,14 @@ import { getAuthToken } from "../utils/localStorage";
 
 const Inventory = () => {
   const [searchQuery, setSearchQuery] = useState("");
-  const [items, setItems] = useState([]); // Manage inventory items
+  const [items, setItems] = useState([]);
 
-  // Fetch items initially
+  
   useEffect(() => {
     fetchItems();
   }, []);
 
-  // Fetch inventory items from the backend
+  
   const fetchItems = async () => {
     const token = getAuthToken();
     if (!token) return;
@@ -24,7 +24,7 @@ const Inventory = () => {
       const response = await axios.get("http://127.0.0.1:8000/api/inventory/", {
         headers: { Authorization: `Bearer ${token}` },
       });
-      setItems(response.data); // Update items state
+      setItems(response.data); 
     } catch (error) {
       console.error("Error fetching inventory:", error.response?.data);
     }
@@ -39,12 +39,7 @@ const Inventory = () => {
         </Grid.Col>
 
         <Grid.Col span={12} md={8}>
-          {/* <TextInput
-            className="inv-search-bar"
-            placeholder="Search items..."
-            value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
-          /> */}
+          
           <div className="inv-table-container">
             <InvList items={items} setItems={setItems} searchQuery={searchQuery} />
           </div>

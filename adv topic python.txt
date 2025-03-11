@@ -1,0 +1,9 @@
+Topics Advanced
+
+CRUD OPERATIONS:Create,read,Update,Delete
+Token &Tokenization:jWT(Header,payload,signature)Encrypt,Decrypt
+Authentication & Authorization:Token ,OTP,SAML,SSO,OAuth2
+Static Files:
+Integrate Payment Gateway
+celery
+Deployment of project

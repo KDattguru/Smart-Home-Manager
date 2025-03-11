@@ -3,9 +3,13 @@
     margin: 0 auto;
     padding: 20px;
     height: 200px;
-    overflow-y: scroll; 
-    scrollbar-width: none; 
-    -ms-overflow-style: none; 
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.inventory-list-container::-webkit-scrollbar {
+    display: none;
 }
 
 .search-container {
@@ -16,7 +20,8 @@
 }
 
 .search-bar {
-    width: 200px; 
+    width: 100%;
+    max-width: 200px;
     display: flex;
     align-items: center;
     padding: 5px;
@@ -50,15 +55,61 @@
 
 .actions-container {
     display: flex;
-    gap: 10px;  
+    gap: 10px;
     align-items: center;
 }
 
 .action-buttons {
     display: flex;
-    gap: 10px; /* Adds space between action buttons */
+    gap: 10px;
 }
 
 .table-container {
-    overflow-y: auto; /* Enables horizontal scrolling if needed */
+
+    width: 100%;
+}
+
+
+@media (max-width: 768px) {
+    .inventory-list-container {
+        width: 100%;
+        height:400px;
+    }
+
+    .search-container {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: none;
+    }
+
+    .actions-container {
+        flex-direction: column;
+        gap: 5px;
+        align-items: stretch;
+    }
+
+    .action-buttons {
+        flex-direction: column;
+        gap: 5px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .search-bar input {
+        font-size: 12px;
+        padding: 4px;
+    }
+
+    .search-icon {
+        font-size: 18px;
+    }
+
+    .action-buttons button {
+        width: 100%;
+    }
 }

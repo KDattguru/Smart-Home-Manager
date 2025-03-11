@@ -113,13 +113,15 @@ const Home = () => {
                   <Text className="card-data">{stats.totalUsers}</Text>
                   <Text size="sm">Users</Text>
                 </div>
+
               </Group>
             </Card>
           </div>
-
           <div className="stats-card">
             <StatsRingCard />
           </div>
+
+        
         </>
       )}
     </div>

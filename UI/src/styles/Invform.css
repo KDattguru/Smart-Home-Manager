@@ -1,46 +1,58 @@
 .inv-form-container {
-    max-width: 500px; 
-    margin: 0 auto; 
-    color: rgb(247, 246, 246);
-background: rgba(102, 104, 107, 0.61);
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 4px );
--webkit-backdrop-filter: blur( 4px );
-border-radius: 10px;
-background-color: #f3eeee3f!important;
-text-align: center;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  max-width: 500px;
+  margin: 0 auto;
+  color: rgb(247, 246, 246);
+  background: rgba(102, 104, 107, 0.61);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  background-color: #f3eeee3f !important;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 20px;
+}
+
+.inv-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inv-form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* Ensuring inputs take full width on smaller screens */
+.inv-form-row .mantine-TextInput-root {
+  flex: 1;
+}
+
+.inv-form-container .mantine-TextInput-root label {
+  font-weight: bold;
+}
+
+.inv-form-container .mantine-Button-root {
+  background-color: #007bff;
+  color: white;
+  transition: background 0.3s ease-in-out;
+}
+
+.inv-form-container .mantine-Button-root:hover {
+  background-color: #0056b3;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .inv-form-container {
+      width: 90%;
+      padding: 15px;
   }
-  
-  .inv-form-container form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; 
-    
-   
-    
-  }
-  
+
   .inv-form-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 10px;
+      flex-direction: column;
+      gap: 10px;
   }
-  
-  .inv-form-row .mantine-TextInput-root {
-    flex: 1;
-  }
-  
-  .inv-form-container .mantine-TextInput-root label {
-    font-weight: bold;
-  }
-  
-  .inv-form-container .mantine-Button-root {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .inv-form-container .mantine-Button-root:hover {
-    background-color: #0056b3;
-  }
-  
+}
